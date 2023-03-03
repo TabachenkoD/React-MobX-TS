@@ -18,6 +18,7 @@ const LoginForm = observer(() => {
 
     const onLogin = async () => {
         await loginStore.fetchUserToken(userName, password);
+        loginStore.getUserToken
         navigate('/');
     }
 
